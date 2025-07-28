@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.notifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0; /* Light gray on hover */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.icon {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.date {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.badge {
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
